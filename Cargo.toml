@@ -1,0 +1,32 @@
+[package]
+name = "dockertop"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A terminal-based Docker container monitoring tool"
+
+[dependencies]
+# Terminal UI
+tui = "0.19"
+crossterm = "0.27"
+
+# Docker API
+bollard = "0.14"  # Docker API client
+tokio = { version = "1.36", features = ["full"] }
+
+# System information
+sysinfo = "0.30"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Async runtime
+futures = "0.3"
+
+# Time handling
+chrono = "0.4"
+
+# Logging
+log = "0.4"
+env_logger = "0.10"
